@@ -1,7 +1,7 @@
 function filterByRating(
   books: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
-  return books.map((book) => book.rating >= 4.0);
+  return books.filter((book) => book.rating >= 4.0);
 }
 
 const books = [
